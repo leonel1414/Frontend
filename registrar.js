@@ -1,6 +1,7 @@
 addEventListener("load", load);
 //llamo al servidor.
-var servi = "http://localhost:444";
+//var servi = "http://localhost:444";
+var servi = "https://serviback.herokuapp.com";
 
 //var servi = "https://serviback.herokuapp.com/frontend";
 
