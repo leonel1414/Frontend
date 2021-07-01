@@ -53,7 +53,7 @@ function enviarMensajeAlServidorPost(servidor, funcionARealizar) {
    // datos.append("contrasena",$("contra1").value);
 
     // indico hacia donde va el mensaje
-    xmlhttp.open("POST", servidor + '/login', true);
+    xmlhttp.open("POST", servidor + '/prueba', true);
     //seteo el evento
     xmlhttp.onreadystatechange = function () {
         //Veo si llego la respuesta del servidor
