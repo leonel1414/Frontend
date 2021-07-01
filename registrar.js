@@ -2,7 +2,7 @@ addEventListener("load", load);
 //llamo al servidor.
 //var servi = "http://localhost:444";
 
-var servi = "https://serviback.herokuapp.com";
+var servi = "https://serviback.herokuapp.com/";
 
 function $(demo){
     return document.getElementById(demo);
@@ -49,11 +49,11 @@ function enviarMensajeAlServidorPost(servidor, funcionARealizar) {
     //declaro el objeto
     var xmlhttp = new XMLHttpRequest();
     var datos = new FormData();
-   // datos.append("nombre",$("usuario1").value);
-   // datos.append("contrasena",$("contra1").value);
+    datos.append("nombre",$("usuario1").value);
+    datos.append("contrasena",$("contra1").value);
 
     // indico hacia donde va el mensaje
-    xmlhttp.open("POST", servidor + '/prueba', true);
+    xmlhttp.open("POST", servidor, true);
     //seteo el evento
     xmlhttp.onreadystatechange = function () {
         //Veo si llego la respuesta del servidor
@@ -67,8 +67,7 @@ function enviarMensajeAlServidorPost(servidor, funcionARealizar) {
             }
         }
     }
-    datos.append("nombre",$("usuario1").value);
-    datos.append("contrasena",$("contra1").value);
+
    
     xmlhttp.setRequestHeader("enctype", "multipart/form-data");
 
