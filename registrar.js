@@ -31,7 +31,7 @@ function enviarMensajeAlServidorPost(servidor, funcionARealizar) {
     datos.append("contrasena",$("contra1").value);
     
     // indico hacia donde va el mensaje
-    xmlhttp.open("GET",servi +'/Frontend/Crear',true);
+    xmlhttp.open("POST",servi +'/Frontend/Crear',true);
     //seteo el evento
     xmlhttp.onreadystatechange = function () {
         //Veo si llego la respuesta del servidor
