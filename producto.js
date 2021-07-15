@@ -152,7 +152,7 @@ function formMod(id){
         
 }
 function modificarDato(id,nombre,descripcion,precio,imagen){
-    enviarMensajeAlServidorPost(serviModPelicula,retornoDelClick);
+    enviarMensajeAlServidorPost(serviModProducto,retornoDelClick);
 
 
 
@@ -160,7 +160,7 @@ function modificarDato(id,nombre,descripcion,precio,imagen){
         alert(respuesta);
     }
 
-    function enviarMensajeAlServidorPost(serviModPelicula, funcionARealizar){
+    function enviarMensajeAlServidorPost(serviModProducto, funcionARealizar){
         var xmlhttp = new XMLHttpRequest();
         var datos = new FormData();
        datos.append("id_producto",id);

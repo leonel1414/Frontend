@@ -22,7 +22,7 @@ function retornoDelClick(respuesta){
 }
 
 
-function enviarMensajeAlServidorPost(servidor, funcionARealizar) {
+function enviarMensajeAlServidorPost(servi, funcionARealizar) {
 
     //declaro el objeto
     var xmlhttp = new XMLHttpRequest();
