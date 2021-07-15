@@ -22,7 +22,7 @@ function click(){
 
 function retornoDelClick(respuesta){
     if(respuesta == 'Bienvenido'){
-        location.replace("pantallaprincipal.html");
+        location.replace("producto.html");
     }else{
         alert('error al ingresar');
     }
