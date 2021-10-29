@@ -199,7 +199,7 @@ function modificarDato(id,nombre,descripcion,precio,imagen){
 function enviarMensajeAlServidor(servidor, funcionARealizar){
     var xmlhttp = new XMLHttpRequest();
 
-    xmlhttp.open("POST",servidor,true);
+    xmlhttp.open("GET",servidor,true);
    
     xmlhttp.onreadystatechange = function(){
 
