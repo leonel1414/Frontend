@@ -124,7 +124,7 @@ function formMod(id){
     function enviarMensajeAlServidorPost(serviFormMod, funcionARealizar){
         var xmlhttp = new XMLHttpRequest();
         var datos = new FormData();
-        datos.append("id_producto",id);
+        datos.append("id",id);
     
         // indico hacia donde va el mensaje
         xmlhttp.open("POST", serviFormMod, true);
@@ -163,7 +163,7 @@ function modificarDato(id,nombre,descripcion,precio,imagen){
     function enviarMensajeAlServidorPost(serviModProducto, funcionARealizar){
         var xmlhttp = new XMLHttpRequest();
         var datos = new FormData();
-       datos.append("id_producto",id);
+       datos.append("id",id);
         datos.append("nombre",nombre);
         datos.append("descripcion",descripcion);
         datos.append("precio",precio);
@@ -199,7 +199,7 @@ function modificarDato(id,nombre,descripcion,precio,imagen){
 function enviarMensajeAlServidor(servidor, funcionARealizar){
     var xmlhttp = new XMLHttpRequest();
 
-    xmlhttp.open("GET",servidor,true);
+    xmlhttp.open("POST",servidor,true);
    
     xmlhttp.onreadystatechange = function(){
 
