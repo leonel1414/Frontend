@@ -54,7 +54,7 @@ function enviarMensajeAlServidorPost(servidor, funcionARealizar) {
     }else{
 
     // indico hacia donde va el mensaje
-    xmlhttp.open("POST", servidor +'/Frontend/Login', true);
+    xmlhttp.open("POST", servidor, true);
     //seteo el evento
     xmlhttp.onreadystatechange = function () {
         //Veo si llego la respuesta del servidor
