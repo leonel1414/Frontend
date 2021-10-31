@@ -35,7 +35,7 @@ function enviarMensajeAlServidorPost(servidor, funcionARealizar) {
     var xmlhttp = new XMLHttpRequest();
     var datos = new FormData();
     datos.append("nombre",$("usuario").value);
-    datos.append("contrasenia",$("contrasenia").value);
+    datos.append("contrasena",$("contrasenia").value);
 
     var usuario=document.getElementById('usuario').value;
     var contrasenia=document.getElementById('contrasenia').value;
