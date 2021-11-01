@@ -64,7 +64,7 @@ function enviarMensajeAlServidorPost(servidor, funcionARealizar) {
                 funcionARealizar(xmlhttp.responseText);
             }
             else {
-                alert("ocurrio un error");
+                alert("ocurrio un error jajaja");
             }
         }
     }
